@@ -1,6 +1,7 @@
 body {
     margin: auto;
-    max-width: 65%;
+    max-width: 85%;
+    font-family: "Sofia Sans",sans-serif;
 }
 header {
     background-color: lightblue;
@@ -31,6 +32,12 @@ footer {
     display: inline-block;
     vertical-align: middle;
     height: 150px;
+  }
+  li {
+    font-weight: bold;
+  }
+  h2 {
+    font-weight: bold;
   }
 /* #potrait {
     width: 10em;

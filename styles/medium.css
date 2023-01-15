@@ -1,0 +1,9 @@
+@media only screen and (min-width: 32.5em) {
+    h2 {
+        font-size: 2em;
+    }
+    li {
+        font-weight: bold;
+        font-size: 1.5em;
+    }
+}
