@@ -41,7 +41,7 @@ img {
     width: 100%;
     height: 400px;
 }
-@media only screen and (min-width: 40.5em) { 
+@media only screen and (min-width: 40.5em) and (max-width: 75.5em) { 
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -49,10 +49,10 @@ img {
     footer {
         font-size: 1em;
     }
-    /* #third {
+    .third {
         grid-column: 1/3;
         width: 95%;
-    } */
+    }
 }
 @media only screen and (min-width: 75.5em) {
     .grid-container {
