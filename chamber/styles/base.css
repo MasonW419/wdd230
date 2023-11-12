@@ -1,0 +1,189 @@
+* {
+    margin: auto;
+}
+header {
+    background-color: rgb(255, 151, 33);
+    padding: 20px 50px;
+}
+main {
+    background-color: rgb(255, 151, 33);
+}
+
+
+.nav_tag {
+    background-color: rgb(0, 57, 80);
+    color: rgb(255, 151, 33);
+    width: 100%;
+    padding: 10px 0px;
+    justify-content: space-evenly;
+  }
+  .nav_tag:hover {
+    background-color: rgb(255, 151, 33);
+    color: rgb(0, 57, 80)
+  }
+  .nav_tag:hover a {
+    color: var(--nav-hover-link-color);
+  }
+  
+  nav {
+      margin: auto;
+      text-align: center;
+      display: flex;
+      flex-direction: row;
+  }
+  nav a {
+    text-decoration: none;
+    color: rgb(255, 151, 33);
+  }
+
+
+
+  .hero_box {
+    background-color: rgb(187, 22, 0);
+    width: 100%;
+    z-index: 0;
+  }
+  .hero_img {
+    background-color: grey;
+    width: 100%;
+    height: 400px;
+    position: relative;
+    z-index: 1;
+  }
+  .hero_text {
+    display:none;
+    position:absolute;
+    top: 60%;
+    left: 55%;
+    z-index: 2;;
+  }
+  .hero_headline {
+    position: absolute;
+    top:10%;
+    left:10%;
+  }
+
+
+
+  .current_events_box {
+    background-color: white;;
+    margin: auto;
+    width: 100%;
+  }
+  .events_section {
+    color: rgb(187, 22, 0);
+    background-color: white;
+    margin: auto;
+    width: 100%;
+  }
+  .events_section p {
+    padding-top: 5%;
+    margin-bottom: 15%;
+    margin-left: 20px;
+    margin-right: 5px;
+  }
+  .events_section h2 {
+    padding: 5px 10px;
+  }
+  .section_image {
+    height: 250px;
+    width: 60%;
+    margin: 10px 20px;
+    background-color: grey;
+    border: 1px solid black;
+    display: block;
+    float: left;
+  }
+  hr {
+    display: none;
+  }
+
+
+
+
+  .weather_img {
+    background-color: grey;
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  .weather_text {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  .weather_text p {
+    color: white;
+    margin: auto;
+    margin-bottom: 20px;
+    font-size: larger;
+  }
+
+  .spotlight_box {
+    background-color: white;
+    color: rgb(187, 22, 0);
+    text-align: center;
+    padding-top: 50px;
+    margin-bottom: 120px;
+    z-index: 0;
+  }
+  .spotlight_img {
+    background-color: grey;
+    height: 300px;
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    z-index: 1;
+  }
+  .spotlight_text {
+    background-color: rgb(187, 22, 0);
+    width: 90%;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 70%;
+    left: 20%
+  }
+
+
+  footer {
+    background-color: rgb(0, 57, 80);
+    color: rgb(255, 151, 33);
+    margin:auto;
+    text-align: center;
+  }
+
+  .footer_note {
+    text-align: center;
+  }
+  #footer_links {
+    display: flex;
+    flex-direction: column;
+  }
+  #footer_links a {
+    color: rgb(255, 151, 33);
+  }
+  #footer_links a:hover {
+    color: rgb(128, 68, 0);
+  }
+  button {
+    margin:auto;
+  }
+  footer button {
+    background-color: rgb(0, 154, 214);
+    color: black;
+    font-size: x-large;
+    padding: 5px 5px;
+    margin: 15px 5px;
+    border: none;
+    border-radius: 10px;
+  }
+  #footer_logo {
+    background-color: grey;
+    margin: auto;
+    border: 1px solid black;
+    height: 180px;
+    width: 180px;
+  }
