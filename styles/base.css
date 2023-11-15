@@ -4,7 +4,7 @@ body {
     background-color: rgb(219, 255, 255);
 }
 header {
-    background-color: rgb(57, 119, 139);
+    background-color: rgb(90, 164, 190);
     display: flex;
     margin: auto;
     border: 1px solid black;
@@ -16,7 +16,7 @@ hr {
   color: black;
 }
 footer {
-    background-color: rgb(57, 119, 139);
+    background-color: rgb(90, 164, 190);
     border: 1px solid black;
     margin: auto;
     text-align: center;
@@ -25,9 +25,47 @@ footer p, span {
   font-weight: bolder;
 }
 
+
+
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: lightgrey;
+	color: #000;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.show div {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.navigation.show div {
+	display: block;
+}
+.navigation div {
+  display: none;
+}
+.navigation a {
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+
+
 /* navigation */
 .nav_tag {
-  background-color:grey;
+  background-color:lightgrey;
   width: 100%;
   padding: 10px 0px;
   justify-content: space-evenly;
@@ -42,7 +80,7 @@ footer p, span {
 
 nav {
     background-color:lightgrey;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin: auto;
     text-align: center;
 }
@@ -67,7 +105,7 @@ section p {
   text-decoration: dashed;
 }
 section h3 {
-  background-color: rgb(57, 119, 139);
+  background-color: rgb(90, 164, 190);
     display: flex;
     margin: auto;
     padding-top: 4px;
@@ -121,6 +159,50 @@ ul li {
     footer {
       margin-top: 10px;
     }
+    #menu {
+      display: none;
+      /* display: block;
+      font-size: 2rem;
+      font-weight:700;
+      text-decoration: none;
+      padding: .5rem .75rem;
+      background-color: #eee;
+      color: #000; */
+  }
+  
+  #menu::before {
+      /* content: "≡"; */
+  }
+  
+  .show div {
+      /* display: block; */
+  }
+  
+  #menu.show::before {
+      /* content: "X"; */
+  }
+  
+  .navigation {
+      /* list-style: none;
+      margin: 0 auto;
+      max-width: 760px; */
+  }
+  
+  .navigation div {
+      /* display: none; */
+      display: block;
+  }
+  .navigation a {
+    display: block;
+      /* display: block;
+      padding: 0.75rem;
+      text-align: left;
+      text-decoration: none;
+      color: black;
+      font-weight: 700;
+      transition: 0.5s;
+      font-size: clamp(1rem, 2vmin, 1.5rem); */
+  }
 }
 
 
