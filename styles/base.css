@@ -10,8 +10,36 @@ header {
     border: 1px solid black;
 }
 main, hr {
-    margin-bottom: 50px;
+    margin-bottom: 5px;
 }
+h2 {
+  font-size: 1rem;
+}
+
+.hero {
+  margin: auto;
+  margin-bottom: 10px;
+  width: 100%;
+  position: relative;
+}
+.hero_lab {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  border: 1px solid black;
+  background: radial-gradient(#55533e, #686246);
+  padding: 1rem;
+  box-shadow: 0 0 1em black;
+  color: white
+
+}
+img {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  object-fit: cover;
+}
+
 hr {
   color: black;
 }
@@ -24,8 +52,6 @@ footer {
 footer p, span {
   font-weight: bolder;
 }
-
-
 
 #menu {
 	display: block;
@@ -132,12 +158,19 @@ ul li {
   display:inline;
 }
 
+iframe {
+  margin: auto;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
   @media only screen and (min-width: 35.5em) {
     body {
       max-width: 75%;
     }
     h2 {
-        font-size: 1.7em;
+        font-size: 1.5em;
     }
     li {
         font-size: 1.3em;
@@ -151,11 +184,30 @@ ul li {
       display: grid;
       grid-template-columns: 2fr 1fr;
     }
+    .hero{
+      grid-column: 1/3;
+      padding: 0;
+      /* object-fit: contain;
+      object-position: center; */
+    }
+
+
+
     .card {
       margin:auto;
       margin-top: 0px;
       margin-bottom: 0px;
     }
+
+    iframe {
+      margin: auto;
+      width: 100%;
+      height: 300px;
+      margin-bottom: 10px;
+      margin-top: 10px;
+      grid-column: 1/3;
+    }
+    
     footer {
       margin-top: 10px;
     }

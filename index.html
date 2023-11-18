@@ -16,7 +16,7 @@
 </head>
 <body>
     <header>
-        <img src=""/>
+        <!-- <img src=""/> -->
         <h1>Mason Wilkins</h1>
     </header>
     <a id="menu" href="#"></a>
@@ -26,8 +26,21 @@
         <div class="nav_tag"><a href="" src="Placeholder text">Site Plan</a></div>
         <div class="nav_tag"><a href="" src="Placeholder text">Form</a></div>
     </nav>
+    <div class="hero">
+        <picture>
+            <img
+            srcset="images/tucson_temp_480px.webp 480w, images/tucson_temp_800px.webp 800w"
+            sizes="(max-width: 600px) 480px,
+                800px"
+            src="images/tucson_temp_800px.webp"
+            alt="Tuscon temple decorated with its neighboring mountain" />
+        </picture>
+        <div class="hero_lab">
+            Tucson Arizona Temple
+        </div>
+    </div>
     <h2>WDD230: Web Frontend Development</h2>
-        <hr>
+    <hr>
     <main>
         <section class="card">
             <h3>Learning Activities</h3>
@@ -45,8 +58,14 @@
             <h3>Information</h3>
             <p>Pheonix, Arizona</p>
             <p>1000 F - Sunny</p>
-            <p>Page Visits: tbd</p>
+            <p>Page Visits: <span class="visits"></span></p>
         </section>
+        <!-- <h3>San Tan Valley</h3> -->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d75557.43639342685!2d-111.54279740352317!3d33.18266336254651!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1700274614031!5m2!1sen!2sus" 
+            style="border:0"
+            referrerpolicy="no-referrer-when-downgrade"
+            loading="lazy"
+            allowfullscreen></iframe>
     </main>
     <footer>
         <p>© <span id="today1"></span>| Mason Wilkins | AZ</p>
