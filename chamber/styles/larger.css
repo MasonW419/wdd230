@@ -1,25 +1,25 @@
-@media only screen and (min-width: 37em) {
-    * {
+@media only screen and (min-width: 40em) {
+    /* * {
         margin: auto;
-    }
+    } */
     header {
-        background-color: rgb(255, 151, 33);
+        background-color: #FFBB6C;
         padding: 20px 50px;
     }
     main {
-        background-color: rgb(255, 151, 33);
+        background-color: #FFBB6C;
     }
 
 
     .nav_tag {
         background-color: rgb(0, 57, 80);
-        color: rgb(255, 151, 33);
+        color: #FFBB6C;
         width: 100%;
         padding: 10px 0px;
         justify-content: space-evenly;
       }
       .nav_tag:hover {
-        background-color: rgb(255, 151, 33);
+        background-color: #FFBB6C;
         color: rgb(0, 57, 80)
       }
       .nav_tag:hover a {
@@ -34,13 +34,13 @@
       }
       nav a {
         text-decoration: none;
-        color: rgb(255, 151, 33);
+        color: #FFBB6C;
       }
 
 
 
       .hero_box {
-        background-color: rgb(187, 22, 0);
+        background-color: rgb(90, 20, 6);
         width: 100%;
         z-index: 0;
       }
@@ -72,7 +72,7 @@
         width: 90%;
       }
       .events_section {
-        color: rgb(187, 22, 0);
+        color: rgb(90, 20, 6);
         background-color: white;
         margin: auto;
         width: 100%;
@@ -120,7 +120,7 @@
 
       .spotlight_box {
         background-color: white;
-        color: rgb(187, 22, 0);
+        color: rgb(90, 20, 6);
         text-align: center;
         z-index: 0;
       }
@@ -135,7 +135,7 @@
         z-index: 1;
       }
       .spotlight_text {
-        background-color: rgb(187, 22, 0);
+        background-color: rgb(90, 20, 6);
         width: 30%;
         color: white;
         padding: 5px;
@@ -149,7 +149,7 @@
 
       footer {
         background-color: rgb(0, 57, 80);
-        color: rgb(255, 151, 33);
+        color: #FFBB6C;
       }
       .footer_row {
         padding: 10px 10px;
@@ -166,7 +166,7 @@
         text-align: left;
       }
       #footer_links a {
-        color: rgb(255, 151, 33);
+        color: #FFBB6C;
       }
       #footer_links a:hover {
         color: rgb(128, 68, 0);
@@ -193,5 +193,121 @@
         border: 1px solid black;
         height: 180px;
         width: 180px;
+      }
+
+      /* .discover_container {
+       margin: 2px auto;
+       float: left;
+        margin-top: 2px;
+        margin-bottom: 2px;
+        width: 94%;
+        display: grid;
+        grid-template-columns: 300px 2fr;
+      }
+      .discover_section {
+        padding: 2px 2px;
+        background-color: rgb(0, 57, 80);
+      }
+      #card_1 {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        float:left;
+      }
+      .content_box {
+        background-color: white;
+        width: 100%;
+        height: 300px;
+        margin: 5px auto;
+        position: relative;
+      }
+      .image_box img {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        margin: auto;
+      }
+      .image_box {
+        /* padding: 2% 2% 2% 2%;
+        width: 100%;
+        margin: 5px auto;
+        margin-bottom: 3px;
+      } */
+
+
+
+
+
+
+
+      .test_box {
+        height: 400px;
+        width: 100%;
+        border: 0px;
+        position: relative;
+      }
+      .test_box img {
+        width: 100%;
+        height: 100%;
+        min-height: 400px;
+        margin: auto;
+      }
+      #first .test_box{
+        background-color: rgb(233, 232, 232);
+      }
+      #second .test_box{
+        background-color: rgb(0, 57, 80);
+        /* padding: 5px; */
+        width: 100%;
+        min-height: 200px;
+      }
+      .test_con {
+        width: 100%;
+      }
+      .test_grid {
+        float: left;
+        background-color: yellow;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        align-items: start;
+      }
+
+
+
+
+
+      #form_container {
+        background-color: white;
+        margin: 0 auto;
+        width: 80%;
+        padding: 5%;
+        display:block;
+      }
+      .form_section    {
+        min-width: 400px;
+        width: 1fr;
+        float: left;
+      }
+      form label {
+        margin: 10px 0;
+        display: block;
+      }
+      label input {
+        float: right;
+      }
+      fieldset ul li {
+        list-style-type: none;
+      }
+      .form_br {
+        display: hidden;
+      }
+      .label_span {
+        display: inline-block;
+      }
+      textarea {
+        height: 9em;
+        width: 32em;
       }
 }

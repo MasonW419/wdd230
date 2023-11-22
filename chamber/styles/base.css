@@ -2,24 +2,24 @@
     margin: auto;
 }
 header {
-    background-color: rgb(255, 151, 33);
+    background-color: #FFBB6C;
     padding: 20px 50px;
 }
 main {
-    background-color: rgb(255, 151, 33);
+    background-color: #FFBB6C;
 }
 
 
 
 .nav_tag {
     background-color: rgb(0, 57, 80);
-    color: rgb(255, 151, 33);
+    color: #FFBB6C;
     width: 100%;
     padding: 10px 0px;
     justify-content: space-evenly;
   }
   .nav_tag:hover {
-    background-color: rgb(255, 151, 33);
+    background-color: #FFBB6C;
     color: rgb(0, 57, 80)
   }
   .nav_tag:hover a {
@@ -34,7 +34,7 @@ main {
   }
   nav a {
     text-decoration: none;
-    color: rgb(255, 151, 33);
+    color: #FFBB6C;
   }
 
 
@@ -122,7 +122,7 @@ main {
 
   .spotlight_box {
     background-color: white;
-    color: rgb(187, 22, 0);
+    color: rgb(90, 20, 6);
     text-align: center;
     padding-top: 50px;
     margin-bottom: 120px;
@@ -139,7 +139,7 @@ main {
     z-index: 1;
   }
   .spotlight_text {
-    background-color: rgb(187, 22, 0);
+    background-color: rgb(90, 20, 6);
     width: 90%;
     color: white;
     padding: 5px;
@@ -151,7 +151,7 @@ main {
 
   footer {
     background-color: rgb(0, 57, 80);
-    color: rgb(255, 151, 33);
+    color: #FFBB6C;
     margin:auto;
     text-align: center;
   }
@@ -164,7 +164,7 @@ main {
     flex-direction: column;
   }
   #footer_links a {
-    color: rgb(255, 151, 33);
+    color: #FFBB6C;
   }
   #footer_links a:hover {
     color: rgb(128, 68, 0);
@@ -176,10 +176,13 @@ main {
     background-color: rgb(0, 154, 214);
     color: black;
     font-size: x-large;
-    padding: 5px 5px;
+    padding: 10px 10px;
     margin: 15px 5px;
     border: none;
     border-radius: 10px;
+  }
+  footer button:hover {
+    font-weight:bolder;
   }
   #footer_logo {
     background-color: grey;
@@ -187,4 +190,155 @@ main {
     border: 1px solid black;
     height: 180px;
     width: 180px;
+  }
+
+
+  /* .discover_container {
+    margin: 2px auto;
+    width: 94%;
+  }
+  .discover_section {
+    padding: 2px 2px;
+    background-color: rgb(0, 57, 80);
+  }
+  .content_box {
+    background-color: lightgrey;
+    width: 100%;
+    height: 300px;
+    margin: 5px auto;
+    position: relative;
+  }
+  .image_box {
+    width: 95%;
+    margin: 5px auto;
+    margin-bottom: 3px;
+  }
+  .image_box img {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  } */
+
+  .test_box {
+    height: 300px;
+    width: 100%;
+    border: 1px solid black;
+    position: relative;
+    text-align: center;
+  }
+  .test_box img {
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
+    margin: auto;
+  }
+  #first .test_box{
+    background-color: rgb(233, 232, 232);
+  }
+  #second .test_box{
+    background-color: rgb(0, 57, 80);
+    /* padding: 5px; */
+    width: 100%;
+    min-height: 200px;
+  }
+  .test_con {
+    width: 100%;
+  }
+  .test_grid {
+    float: left;
+    background-color: yellow;
+    width: 100%;
+  }
+
+  #disc_box_1 {
+    text-align: center;
+    font-size: medium;
+  }
+  #disc_box_1 br {
+    height: 5%;
+  }
+
+  .disc_events {
+    text-align: center;
+  }
+  .disc_events_img {
+    background-color: lightgrey;
+    height: 100px;
+    width: 60%;
+    margin: auto;
+  }
+  #disc_spot_img {
+    height: 150px;
+    width: 85%;
+    padding: 0;
+    margin: auto;
+  }
+  #disc_spot_txt {
+    top: 70%;
+    left: 10%;
+    font-size: .55em
+  }
+
+  #discovery_main {
+    background-color: white;
+  }
+  #discovery_main h1 {
+    text-align: center;
+    padding: 10px;
+  }
+
+
+  #form_container {
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    padding: 5%;
+    display:block;
+  }
+
+  fieldset {
+    border-color: rgb(90, 20, 6);
+  }
+  fieldset legend {
+    color:rgb(90, 20, 6);
+  }
+  form label {
+    display: block;
+    color:rgb(0, 57, 80);
+  }
+  label input {
+    background-color: lightgray;
+    color: black;
+  }
+  fieldset ul li {
+    list-style-type: none;
+  }
+  .label_span {
+    display: block;
+  }
+  textarea {
+    height: 3em;
+    width: 13em;
+  }
+  label #timestamp {
+    display: hidden;
+  }
+  .submit_btn {
+    background-color:rgb(90, 20, 6);
+    color: white;
+    padding: .6em;
+    font-size: large;
+    border-style: hidden;
+    float: center;
+  }
+  #thankyou_con {
+    background-color: white;
+    width: 80%;
+    height: 200px;
+    text-align: center;
+    padding: 100px 20px;
+    padding-bottom: 200px;
+  }
+  #thankyou_con h3 {
+    color: rgb(70, 70, 70);
   }
