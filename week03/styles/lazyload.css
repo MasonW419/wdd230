@@ -1,0 +1,28 @@
+* {
+    margin: auto;
+}
+h1 {
+    color: blue;
+    margin: auto;
+    text-align: center;
+}
+main {
+    margin: auto;
+    width: 90%;
+}
+img {
+    width: 400px;
+    height: 600px;
+    background-color: #000000;
+    animation: fade 15s;
+    display: block;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
