@@ -1,0 +1,28 @@
+{
+	"familyName": "Robinsons",
+	"dateMovedIn": "3/23/23",
+	"numOfPeople": "4",
+	"visitedByBishopric": "yes",
+	"familyMembers": [
+		{
+			"Name": "Herald",
+			"Gender": "male",
+			"Birthdate": "1/16/1992"
+		},
+		{
+			"Name": "Sonia",
+			"Gender": "femail",
+			"Birthdate": "8/21/1993"
+		},
+		{
+			"Name": "Rody",
+			"Gender": "male",
+			"Birthdate": "5/06/2016"
+		},
+		{
+			"Name": "Sarah",
+			"Gender": "female",
+			"Birthdate": "3/20/2018"
+		}
+	]
+}

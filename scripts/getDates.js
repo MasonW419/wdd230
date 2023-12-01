@@ -44,6 +44,7 @@ async function apiFetch() {
 			const data = await response.json();
 			console.log(data); // testing only
 			console.log(data.main.temp)
+			console.log("please work");
 			displayResults(data); // uncomment when ready
 		} else {
 			throw Error(await response.text() );
@@ -59,3 +60,6 @@ function displayResults(data) {
 	description.innerHTML = data.weather[0].description;
 	const iconsrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon;
 }
+
+
+
