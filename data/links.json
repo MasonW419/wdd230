@@ -1,0 +1,51 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "HG Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "mQuearies"
+                },
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Site Plan"
+                }
+            ]
+        },
+        {
+            "week":"Week 2",
+            "links": [
+                {
+                    "url": "week02/design.html",
+                    "title": "Design Principles"
+                },
+                {
+                    "url": "week02/bom.html",
+                    "title": "BOM Chapters"
+                },
+                {
+                    "url": "https://codepen.io/masonw419/pen/JjxrpwP",
+                    "title": "Hamburger Menue"
+                },
+                {
+                    "url": "chamber/index.html",
+                    "title": "Chamber Home Page"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "chamber/join.html",
+                    "title": "Join Page"
+                }
+            ]
+        }
+    ]
+}

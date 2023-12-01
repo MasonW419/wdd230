@@ -33,5 +33,29 @@ if (numVisits !== 0) {
 numVisits++;
 localStorage.setItem("numVisits-ls", numVisits);
 
+const tempurature = document.querySelector("#curTemp");
+const icon = document.querySelector("#weatherIcon");
+const description = document.querySelector("#weatherDescription");
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.170277&lon=-111.572220&appid=594a0ea36afc97e8ee68c4c657acfa04&units=imperial';
+async function apiFetch() {
+	try {
+		const response = await fetch(url);
+		if (response.ok) {
+			const data = await response.json();
+			console.log(data); // testing only
+			console.log(data.main.temp)
+			displayResults(data); // uncomment when ready
+		} else {
+			throw Error(await response.text() );
+		}
+	} catch (error) {
+		console.log(error);
+	}
+}
+apiFetch();
 
-
+function displayResults(data) {
+	tempurature.innerHTML = data.main.temp;
+	description.innerHTML = data.weather[0].description;
+	const iconsrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon;
+}
