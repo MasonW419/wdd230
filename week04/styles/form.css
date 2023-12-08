@@ -1,0 +1,27 @@
+.label_span {
+    display: block;
+  }
+  #form_container {
+    background-color: white;
+    margin: 0 auto;
+    width: 90%;
+    padding: 5%;
+    display:block;
+  }
+
+  .form_section    {
+    min-width: 400px;
+    width: 1fr;
+    float: left;
+  }
+  form label {
+    margin: 10px 0;
+    display: block;
+  }
+  label input {
+    float: right;
+  }
+
+  .label_span {
+    display: inline-block;
+  }

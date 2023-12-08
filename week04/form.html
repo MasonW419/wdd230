@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form HTML</title>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <div id="form-container">
+        <h1>Form Title</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Login Form</legend>
+                <div class="form_section">
+                <label class="top" for="username"><span class="label_span">Username: </span><input type="text" id="username" accesskey="u" name="username" required></label>
+                <!-- <br class="form_br"> -->
+                <label class="top" for="password"><span class="label_span">Password: </span><input type="password" id="password" accesskey="p" name="password" pattern="[0-9][a-zA-Z -]{6,}" required></label>
+                <br class="form_br">
+                <label class="top" for="repassword"><span class="label_span">Re-Enter Password: </span><input type="password" id="repassword" accesskey="r" name="repassword" pattern="[0-9][a-zA-Z -]{6,}" required></label>
+                <!-- <br class="form_br"> -->
+                <label class="top" for="email"><span class="label_span">E-mail: </span><input type="text" id="email" accesskey="e" name="email" placeholder="someone@gmail.com" required></label>
+                <!-- <br class="form_br"> -->
+                <label class="top" for="rating"><span class="label_span">Rating: </span><input type="number" id="rating" accesskey="t" name="rating" placeholder="1234444567" required></label>
+                </div>
+            </fieldset>
+            <input class="submit_btn" type="submit" name="click" value="Submit"/>
+        </form>
+    </div>
+</body>
+</html>

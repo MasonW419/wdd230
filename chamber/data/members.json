@@ -1,0 +1,68 @@
+{
+    "members": [ 
+        {
+            "member": "AVnet",
+            "names": [],
+            "address": "2211 South 47th Street Phoenix, AZ USA 85034",
+            "phoneNumber": "480-643-2000",
+            "websiteURL": "https://www.avnet.com/wps/portal/us/",
+            "iconfile": "",
+            "membershipLevel": ""
+        },
+        {
+            "member": "Axon Enterprise, Inc.",
+            "names": [],
+            "address": "Scottsdale 17800 North 85th Street Scottsdale, AZ 85255 US",
+            "phoneNumbers": "",
+            "websiteURL": "",
+            "iconfile": "",
+            "membershipLevel": ""
+        },
+        {
+            "member": "",
+            "names": [],
+            "address": "",
+            "phoneNumber": "",
+            "websiteURL": "",
+            "iconfile": "",
+            "membershipLevel": ""
+        },
+        {
+            "member": "",
+            "names": [],
+            "address": "",
+            "phoneNumber": "",
+            "websiteURL": "",
+            "iconfile": "",
+            "membershipLevel": ""
+        },
+        {
+            "member": "",
+            "names": [],
+            "addresse": "",
+            "phoneNumber": "",
+            "websiteURL": "",
+            "iconfile": "",
+            "membershipLevel": ""
+        },
+        {
+            "member": "",
+            "names": [],
+            "address": "",
+            "phoneNumber": "",
+            "websiteURL": "",
+            "iconfile": "",
+            "membershipLevel": ""
+        },
+        {
+            "member": "",
+            "names": [],
+            "address": "",
+            "phoneNumber": "",
+            "websiteURL": "",
+            "iconfile": "",
+            "membershipLevel": ""
+        }
+
+    ]
+}

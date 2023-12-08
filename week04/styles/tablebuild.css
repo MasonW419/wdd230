@@ -1,0 +1,36 @@
+:root {
+    --dark: black;
+    --grey: darkgrey;
+    --light: lightgrey;
+    --verylight: rgb(230, 230, 230);
+}
+caption {
+    caption-side: bottom;
+}
+table {
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+th {
+    background-color: var(--dark);
+    color: white;
+    padding: 1em;
+}
+tbody {
+    border: 1px solid var(--light);
+}
+tbody tr:nth-child(2)  {
+    background-color: var(--verylight);
+}
+.column {
+    color: black;
+    background-color: var(--grey);
+}
+td {
+    padding: .5em;
+    text-align: center;
+}
+td:nth-child(1), td:nth-child(2), td:nth-child(3) {
+    border-right:1px solid var(--light);
+}

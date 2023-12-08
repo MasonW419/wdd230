@@ -172,6 +172,9 @@ main {
   button {
     margin:auto;
   }
+  button a{
+    margin: auto;
+  }
   footer button {
     background-color: rgb(0, 154, 214);
     color: black;
@@ -181,9 +184,9 @@ main {
     border: none;
     border-radius: 10px;
   }
-  footer button:hover {
+  /* footer button:hover {
     font-weight:bolder;
-  }
+  } */
   #footer_logo {
     background-color: grey;
     margin: auto;
