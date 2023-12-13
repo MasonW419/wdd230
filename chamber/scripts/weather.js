@@ -1,5 +1,5 @@
 const tempurature = document.querySelector("#curTemp");
-const icon = document.querySelector("#weatherIcon");
+// const icon = document.querySelector("#weatherIcon");
 const description = document.querySelector("#weatherDescription");
 const url = 'https://api.openweathermap.org/data/2.5/weather?lat=33.170277&lon=-111.572220&appid=594a0ea36afc97e8ee68c4c657acfa04&units=imperial';
 
@@ -16,15 +16,15 @@ async function apiFetch(url) {
 		const response = await fetch(url);
 		if (response.ok) {
 			const data = await response.json();
-			console.log(data); // testing only
+			// console.log(data); // testing only
 			displayResults(data); // uncomment when read
 		} else {
 			throw Error(await response.text() );
-            console.log('test else');
+            // console.log('test else');
 		}
 	} catch (error) {
 		console.log(error);
-        console.log('test error');
+        // console.log('test error');
 	}
 }
 apiFetch(url);
@@ -33,15 +33,15 @@ async function apiFetch2(url) {
 		const response = await fetch(url);
 		if (response.ok) {
 			const data = await response.json();
-			console.log(data); // testing only
+			// console.log(data); // testing only
 			displayResults2(data); // uncomment when read
 		} else {
 			throw Error(await response.text() );
-            console.log('test else');
+            // console.log('test else');
 		}
 	} catch (error) {
 		console.log(error);
-        console.log('test error');
+        // console.log('test error');
 	}
 }
 apiFetch2(url2);
@@ -63,7 +63,7 @@ function displayResults2(data) {
 var days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 var date = new Date();
 var today = days[date.getDay()];
-console.log(today);
+// console.log(today);
 
 const banner = document.querySelector('#event_banner');
 if (today == "Monday" || today == "Tuesday" || today == "Wednesday") {

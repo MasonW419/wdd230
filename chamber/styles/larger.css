@@ -13,7 +13,7 @@
     #menu {
       display: none;
     }
-    .navigation div {
+    nav div {
       display: block;
     }
 
@@ -317,7 +317,7 @@
       }
       .form_section    {
         min-width: 400px;
-        width: 1fr;
+        width: 100%;
         float: left;
       }
       form label {
@@ -331,7 +331,7 @@
         list-style-type: none;
       }
       .form_br {
-        display: hidden;
+        display: none;
       }
       .label_span {
         display: inline-block;

@@ -3,20 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mason Wilkins - WDD230 - Web Frontend Development">
+    <meta name="description" content="This is the Chamber of Commerce for Maricopa County. This site is driven to showcase, advertise and organize businesses from all across Maricopa County!
+                                        The Join Page allows companies and businesses from across Maricopa to sign up and become a Member of the Chamber of Commerce here in Maricopa County.">
+    <meta property="og:title" content = "Join Application - Maricopa County Chamber of Commerce">
+    <meta property="og:type" content = "website">
+    <meta property="og:url" content="https://masonw419.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="images/IMG_2076.JPG">
     <link type="text/css" rel="stylesheet" href="styles/base.css">
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
-    <title>Maricopa Commerce Chamber</title>
+    <link rel="icon" href="images/favicon.ico">
+    <title>Join Application - Maricopa County Chamber of Commerce</title>
 </head>
 <body>
     <header>
-            <h1>Maricopa Commerce Chamber</h1>
-    </header>
-    <nav>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Home</a></div>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Lorem</a></div>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Ipsum</a></div>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Dolor</a></div>
-    </nav>
+        <h1>Maricopa County Chamber of Commerce</h1>
+</header>
+<nav>
+    <div id="menu"></div>
+    <div class="nav_tag"><a href="index.html">Home</a></div>
+    <div class="nav_tag"><a href="discover.html">Discover</a></div>
+    <div class="nav_tag"><a href="join.html">Join</a></div>
+    <div class="nav_tag"><a href="directory.html">Directory</a></div>
+</nav>
     <main>
         <div id="form_container">
             <h1>Membership Application Form</h1>
@@ -30,7 +39,7 @@
                 <br class="form_br">
                 <label class="top" for="position"><span class="label_span">*Title/Position: </span><input type="tel" id="position" accesskey="t" name="position" required></label>
                 <br class="form_br">
-                <label class="top" for="email"><span class="label_span">*E-mail: </span><input type="text" id="email" accesskey="e" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top" for="email"><span class="label_span">*E-mail: </span><input type="email" id="email" accesskey="e" name="email" placeholder="someone@gmail.com" required></label>
                 <br class="form_br">
                 <label class="top" for="phone"><span class="label_span">Phone Number: </span><input type="text" id="phone" accesskey="p" name="phone" placeholder="1234444567"></label>
                 </div>
@@ -58,19 +67,21 @@
                 <br class="form_br"><br class="form_br">
                 <div>*Membership Level:</div>
                 <ul>
-                <li><label class="sub" for="member_level"><input type="radio" id="member_level" name="member_level" value="Gold"> Gold Membership</label></li>
-                <li><label class="sub" for="member_level"><input type="radio" id="member_level" name="member_level" value="Silver"> Silver Membership</label></li>
-                <li><label class="sub" for="member_level"><input type="radio" id="member_level" name="member_level" value="Bronze"> Bronze Membership</label></li>
-                <li><label class="sub" for="member_level"><input type="radio" id="member_level" name="member_level" value="NP"> NP Membership</label></li>
+                <li><label class="sub" for="member_level_gold"><input type="radio" id="member_level_gold" name="member_level_gold" value="Gold"> Gold Membership</label></li>
+                <li><label class="sub" for="member_level_silver"><input type="radio" id="member_level_silver" name="member_level_silver" value="Silver"> Silver Membership</label></li>
+                <li><label class="sub" for="member_level_bronze"><input type="radio" id="member_level_bronze" name="member_level_bronze" value="Bronze"> Bronze Membership</label></li>
+                <li><label class="sub" for="member_level_np"><input type="radio" id="member_level_np" name="member_level_np" value="NP"> NP Membership</label></li>
                 </ul>
                 <br class="form_br">
                 <label class="top" for="description">*Description: <br>
-                    <!-- <input type="text" id="description" name="description"> -->
                     <textarea name="description" id="description" accesskey="d" rows="8" cols="52"></textarea>
                 </label>
                 <br class="form_br">
                 <!-- <label for="timestamp" id="timestamp">Timestamp</label> -->
                 </div>
+                <label for="hidden">
+                    <input type="hidden" id="hidden" name="hidden">
+                </label>
             </fieldset>
             <br>
             <input class="submit_btn" type="submit" name="click" value="Submit"/>
@@ -79,26 +90,31 @@
     </main>
     <footer>
         <div class="footer_row">
-            <a href="../placeholder_link.html"><button type="button">Join Us Today!</button></a>
-
+            <div class="footer_contact">
+                    <p>Contact Us:</p>
+                    <p>Email: info@maricopacommerce.org</p>
+                    <p>Phone: (480)-773-4630</p>
+            </div>
             <div class="footer_section" id="footer_links">
             <h3>Other Links:</h3>
             <br>
-                <a href="../placeholder_link.html">About Us</a>
-                <a href="../placeholder_link.html">Community Events</a>
-                <a href="../placeholder_link.html">Community Surveys</a>
-                <a href="../placeholder_link.html">Member Directory</a>
-                <a href="../placeholder_link.html">Become a Member</a>
-                <a href="../placeholder_link.html">Frequently Asked Questions</a>
-                <br><br>
+            <a href="placeholdLink.html">About Us</a>
+            <a href="placeholdLink.html">Community Events</a>
+            <a href="placeholdLink.html">Community Surveys</a>
+            <a href="directory.html">Member Directory</a>
+            <a href="join.html">Become a Member</a>
+            <a href="placeholdLink.html">Frequently Asked Questions</a>
+            <br><br>
             </div> 
-            <div class="footer_section" id="footer_logo">
-            </div>
+            <!-- <div class="footer_section" id="footer_logo">
+            </div> -->
+    
         </div> 
         <div class="footer_note">
+            
             <p> @ 2023 | Maricopa Commerce Chamber | Arizona </p>
             <p> Mason Wilkins | WDD230 - Web Frontend Development Project</p>
         </div>
-    </footer>
+        </footer>
 </body>
 </html>
