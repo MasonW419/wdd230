@@ -9,5 +9,8 @@ if (dayNum < 1) {
 } else {
     dayDisplay.textContent = "You last visited " + dayNum + " days ago";
 }
+if (dayLast == 0 ){
+    dayDisplay.textContent = "Welcome to our Discover Page! This is your first visit."
+}
 
 localStorage.setItem("dayLast-ls", dayNow);

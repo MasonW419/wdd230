@@ -53,6 +53,11 @@ footer p, span {
   font-weight: bolder;
 }
 
+
+
+
+
+
 #menu {
 	display: block;
 	font-size: 2rem;
@@ -86,6 +91,11 @@ footer p, span {
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
+
+
+
+
+
 
 
 

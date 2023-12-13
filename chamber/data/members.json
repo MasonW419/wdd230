@@ -1,67 +1,96 @@
 {
     "members": [ 
         {
-            "member": "AVnet",
-            "names": [],
+            "member": "Avnet",
+            "names": [
+                {
+                    "name": "CEO Philip R. Gallagher"
+                }
+            ],
             "address": "2211 South 47th Street Phoenix, AZ USA 85034",
             "phoneNumber": "480-643-2000",
             "websiteURL": "https://www.avnet.com/wps/portal/us/",
-            "iconfile": "",
-            "membershipLevel": ""
+            "iconfile": "images/member_icons/av 1.png",
+            "membershipLevel": "Silver Membership"
         },
         {
             "member": "Axon Enterprise, Inc.",
-            "names": [],
-            "address": "Scottsdale 17800 North 85th Street Scottsdale, AZ 85255 US",
-            "phoneNumbers": "",
-            "websiteURL": "",
-            "iconfile": "",
-            "membershipLevel": ""
+            "names": [
+                {
+                    "name": "CEO Patrick W. Smith"
+                }
+            ],
+            "address": "North 85th Street Scottsdale, AZ 85255 US",
+            "phoneNumber": "800-978-2737",
+            "websiteURL": "https://www.axon.com/company",
+            "iconfile": "images/member_icons/ax 2.png",
+            "membershipLevel": "Gold Membership"
         },
         {
-            "member": "",
-            "names": [],
-            "address": "",
-            "phoneNumber": "",
-            "websiteURL": "",
-            "iconfile": "",
-            "membershipLevel": ""
+            "member": "Pinnacle West Capital. ",
+            "names": [
+                {
+                    "name": "CEO Jeffrey B. Guldnar"
+                }
+            ],
+            "address": "400 N 5th St, Phoenix, AZ 85004",
+            "phoneNumber": "800-457-2983",
+            "websiteURL": "https://www.pinnaclewest.com/Home/default.aspx",
+            "iconfile": "images/member_icons/pw 1.png",
+            "membershipLevel": "Bronze Membership"
         },
         {
-            "member": "",
-            "names": [],
-            "address": "",
-            "phoneNumber": "",
-            "websiteURL": "",
-            "iconfile": "",
-            "membershipLevel": ""
+            "member": "Plexus Corp. Publishing.",
+            "names": [
+                {
+                    "name": "CEO Todd Kelsey"
+                }
+            ],
+            "address": "9145 E Pima Center Pkwy, Scottsdale, AZ 85258",
+            "phoneNumber": "480-998-3490",
+            "websiteURL": "https://plexusworldwide.com/our-story",
+            "iconfile": "images/member_icons/pl 1.png",
+            "membershipLevel": "Gold Membership"
         },
         {
-            "member": "",
-            "names": [],
-            "addresse": "",
-            "phoneNumber": "",
-            "websiteURL": "",
-            "iconfile": "",
-            "membershipLevel": ""
+            "member": "Banner Health",
+            "names": [
+                {
+                    "name": "CEO Peter S. Fine"
+                }
+            ],
+            "address": "302 E McDowell Rd, Phoenix, AZ",
+            "phoneNumber": "833-252-5535",
+            "websiteURL": "https://www.bannerhealth.com/",
+            "iconfile": "images/member_icons/bh 1.png",
+            "membershipLevel": "Bronze Membership"
         },
         {
-            "member": "",
-            "names": [],
-            "address": "",
-            "phoneNumber": "",
-            "websiteURL": "",
-            "iconfile": "",
-            "membershipLevel": ""
+            "member": "Republic Services Inc.",
+            "names": [
+                {
+                    "name": "CEO Jon Vander Ark"
+                }
+            ],
+            "address": "18500 N Allied Way, Phoenix, AZ",
+            "phoneNumber": "602-237-2078",
+            "websiteURL": "https://www.republicservices.com/",
+            "iconfile": "images/member_icons/rs 1.png",
+            "membershipLevel": "Bronze Membership"
         },
         {
-            "member": "",
-            "names": [],
-            "address": "",
-            "phoneNumber": "",
-            "websiteURL": "",
-            "iconfile": "",
-            "membershipLevel": ""
+            "member": "Sprouts Farmers Market",
+            "names": [
+                {
+                    "name": "CEO Jack Sinclair"
+
+                }
+            ],
+            "address": "5455 E. High Street, Suite 111 Phoenix, AZ 85054",
+            "phoneNumber": "480-814-8016",
+            "websiteURL": "https://www.sprouts.com/",
+            "iconfile": "images/member_icons/sprouts icon 1.png",
+            "membershipLevel": "Bronze Membership"
         }
 
     ]

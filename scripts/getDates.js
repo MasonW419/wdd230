@@ -59,6 +59,8 @@ function displayResults(data) {
 	tempurature.innerHTML = data.main.temp;
 	description.innerHTML = data.weather[0].description;
 	const iconsrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon;
+	icon.setAttribute('src', iconsrc);
+	icon.setAttribute('alt', 'weather icon');
 }
 
 

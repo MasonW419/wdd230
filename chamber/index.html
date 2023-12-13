@@ -3,45 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mason Wilkins - WDD230 - Web Frontend Development">
+    <meta name="description" content="This is the Chamber of Commerce for the County of Maricopa County. This site is driven to showcase, advertise and organize businesses from all across Maricopa County!">
+    <meta property = "og:title" content = "Chamber of Commerce of Maricopa County">
+    <meta property = "og:type" content = "website">
+    <meta property = "og:url" content="https://masonw419.github.io/wdd230/chamber/index.html">
+    <meta property = "og:image" content="images/IMG_2719_600px.webp">
+    <link type="text/css" rel="stylesheet" href="styles/normalize.css">
     <link type="text/css" rel="stylesheet" href="styles/base.css">
     <link type="text/css" rel="stylesheet" href="styles/larger.css">
-    <title>Maricopa Commerce Chamber</title>
+    <title>Chamber of Commerce of Maricopa County</title>
 </head>
 <body>
     <header>
-            <h1>Maricopa Commerce Chamber</h1>
+            <h1>Maricopa Commerce Chamber of Maricopa County</h1>
     </header>
-    <nav>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Home</a></div>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Lorem</a></div>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Ipsum</a></div>
-        <div class="nav_tag"><a href="../placeholder_link.html" src="Placeholder text">Dolor</a></div>
+    <nav class="navigation">
+        <div id="menu"></div>
+        <div class="nav_tag"><a href="../placeholder_link.html">Home</a></div>
+        <div class="nav_tag"><a href="../placeholder_link.html">Lorem</a></div>
+        <div class="nav_tag"><a href="../placeholder_link.html">Ipsum</a></div>
+        <div class="nav_tag"><a href="../placeholder_link.html">Dolor</a></div>
     </nav>
     <main>
         <div class="hero_box">
-            <div class="hero_img">
-                <h2 class="hero_headline">Lorem Ipsum Dolor Sit Amet</h2>
+            <!-- <div class="hero_img"> -->
+                <!-- <picture>
+                    <img srcset="images/Chamber_Hero_400px 480w, images/Chamber_Hero_800px.webp 800w, images/Chamber_Hero_1300px 1200w" sizes="(max-width: 400px) 400px, (max-width: 800px) 800px, 1200px" src="images/tucson_temp_1300px.webp" alt="Picture overlooking Pheonix which resides within Maricopa County" />
+                </picture> -->
+
+                <picture>
+                    <source media="(max-width: 499)" srcset="images/Chamber_Hero_400px.webp" />
+                    <source media="(max-width: 999px)" srcset="images/Chamber_Hero_800px.webp" />
+                    <source media="(min-width: 1000px)" srcset="images/Chamber_Hero_1300px.webp" />
+                    <img src="images/Chamber_Hero_1300px.webp" alt="Picture overlooking Pheonix which resides within Maricopa County"/>
+                </picture>
+                
+
+                <div class="hero_joinus">
+                    <a href="">Join Us Today!</a>
+                </div>
+                <!-- <h2 class="hero_headline">Lorem Ipsum Dolor Sit Amet</h2>
                 <p class="hero_text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                 incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                 ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
                 in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat 
                 non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-            </div>
+                </p> -->
+            <!-- </div> -->
         </div>
-
+        <div id="event_banner">Please join our  Meet & Greet event at 7:00pm this Wednesday!</div>
         <div class="current_events_box">
+            <h2>Current Events of the Week</h2>
             <div class="section_row">
             <div class="events_section">
-                <h2>Title 1</h2>
+                <h3>Title 1</h3>
                 <div class="section_image"></div>
                 <p>Desription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="events_section">
-                <h2>Title 2</h2>
+                <h3>Title 2</h3>
                 <div class="section_image"></div>
                 <p>Desription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -52,14 +76,14 @@
             <hr>
             <div class="section_row">
             <div class="events_section">
-                <h2>Title 3</h2>
+                <h3>Title 3</h3>
                 <div class="section_image"></div>
                 <p>Desription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
                     ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
             </div>
             <div class="events_section">
-                <h2>Title 4</h2>
+                <h3>Title 4</h3>
                 <div class="section_image"></div>
                 <p>Desription: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
@@ -70,34 +94,38 @@
             </div>
         </div>
         <div class="weather_box">
-            <div class="weather_img">
-            <div class="weather_text"><p>Pheonix: ??*</p>
-            <p>Mesa: ??*</p>
-            <p>Scottsdale: ??*</p>
-            <p>Chandler: ??*</p>
-            <p>Gilbert: ??*</p>
+            <!-- <picture>
+                <source media="(max-width: 799px)" srcset="images\WeatherFull_800px.webp" />
+                <source media="(min-width: 800px)" srcset="images/WeatherFull7_1300.webp" /> -->
+                <img src="images\WeatherFull7_1300px.webp" alt="Picture of an Arizona Sunset"/>
+            <!-- </picture> -->
+            <!-- <div class="weather_img"> -->
+            <div class="weather_text">
+                <p>Current Weather: <img id="weatherIcon" src="" alt=""/> 
+                    <span id="curTemp"></span> F - <span id="weatherDescription"></span> </p>
+                <p>Next 3 Day Forecast: </p>
+                    <span id="Temp1"></span> F - <span id="Descript1"></span> </p>
+                    <span id="Temp2"></span> F - <span id="Descript2"></span> </p>
+                    <span id="Temp3"></span> F - <span id="Descript3"></span> </p>
             </div>
-            </div>
+            <!-- </div> -->
         </div>
 
         <div class="spotlight_box">
             <h2>Spotlight of the Week</h2>
-            <div class="spotlight_img">
-                <div class="spotlight_text">
-                    <h3>Lorem Ipsum Dolor</h3>
-                    <br>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        incididunt ut labore et dolore magna aliqua. 
-                    </p>
-                </div>
+            <div id="spotlight-cards">
+
             </div>
         </div>
     </main>
     <footer>
         <div class="footer_row">
-            <a href="../placeholder_link.html"><button type="button">Join Us Today!</button></a>
-
+            <div class="footer_contact">
+                <!-- <a href="../placeholder_link.html"><button type="button">Join Us Today!</button></a> -->
+                    <p>Contact Us:</p>
+                    <p>Email: info@maricopacommerce.org</p>
+                    <p>Phone: (480)-773-4630</p>
+            </div>
             <div class="footer_section" id="footer_links">
             <h3>Other Links:</h3>
             <br>
@@ -111,11 +139,16 @@
             </div> 
             <div class="footer_section" id="footer_logo">
             </div>
+
         </div> 
         <div class="footer_note">
+            
             <p> @ 2023 | Maricopa Commerce Chamber | Arizona </p>
             <p> Mason Wilkins | WDD230 - Web Frontend Development Project</p>
         </div>
     </footer>
+    <script type="text/javascript" src="scripts/hamMenu.js"></script>
+    <script type="text/javascript" src="scripts/weather.js"></script>
+    <script type="text/javascript" src="scripts/homeSpotlight.js"></script>
 </body>
 </html>

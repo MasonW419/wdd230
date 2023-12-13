@@ -9,6 +9,48 @@ main {
     background-color: #FFBB6C;
 }
 
+/* banner */
+#event_banner {
+  display: none;
+  width: 100%;
+  background-color: rgb(90, 20, 6);
+  color: white;
+  text-align: center;
+  padding: 5px 20px;
+  font-size: 1.5em;
+}
+
+/* hamburger menu */
+#menu {
+	display: inline;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+  text-align: left;
+	padding: .5rem .75rem;
+	background-color: rgb(0, 57, 80);
+	color: #FFBB6C;
+  width: 100%;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+.show div {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+.navigation.show div {
+	display: block;
+}
+.navigation div {
+  display: none;
+}
 
 
 .nav_tag {
@@ -20,7 +62,7 @@ main {
   }
   .nav_tag:hover {
     background-color: #FFBB6C;
-    color: rgb(0, 57, 80)
+    color: rgb(0, 57, 80);
   }
   .nav_tag:hover a {
     color: var(--nav-hover-link-color);
@@ -30,7 +72,7 @@ main {
       margin: auto;
       text-align: center;
       display: flex;
-      flex-direction: row;
+      flex-direction: column;
   }
   nav a {
     text-decoration: none;
@@ -40,17 +82,42 @@ main {
 
 
   .hero_box {
-    background-color: rgb(187, 22, 0);
+    background-color: rgb(90, 20, 6);
     width: 100%;
     z-index: 0;
+    position: relative;
   }
-  .hero_img {
+  /* .hero_img {
     background-color: grey;
     width: 100%;
     height: 400px;
     position: relative;
     z-index: 1;
+  } */
+  .hero_box picture img {
+    width: 100%;
+    max-height: 500px;
+    height: auto;
+    margin: auto;
+    object-fit: cover;
+
   }
+
+  .hero_joinus {
+    position: absolute;
+    top: 70%;
+    left: 5%;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: radial-gradient(rgb(0, 57, 80), rgb(0, 57, 80));
+    padding: .5rem;
+    box-shadow: 0 0 1em black;
+  }
+  .hero_joinus a {
+    color: white;
+    text-decoration: none;
+  }
+
   .hero_text {
     display:none;
     position:absolute;
@@ -72,7 +139,7 @@ main {
     width: 100%;
   }
   .events_section {
-    color: rgb(187, 22, 0);
+    color: rgb(90, 20, 6);
     background-color: white;
     margin: auto;
     width: 100%;
@@ -83,7 +150,12 @@ main {
     margin-left: 20px;
     margin-right: 5px;
   }
-  .events_section h2 {
+  .current_events_box h2 {
+    padding: 10px 5px;
+    text-align: center;
+    color: rgb(90, 20, 6);
+  }
+  .events_section h3 {
     padding: 5px 10px;
   }
   .section_image {
@@ -100,18 +172,27 @@ main {
   }
 
 
-
-
-  .weather_img {
+  .weather_box {
+    height: 440px;
+    background-color: lightgrey;
+    position: relative;
+  }
+  /* .weather_box img{
+    width: 100%;
+    height: 340px;
+    min-height: 340px;
+  } */
+  /* .weather_img {
     background-color: grey;
     width: 100%;
     height: 400px;
     position: relative;
-  }
+  } */
   .weather_text {
     position: absolute;
     top: 50px;
     left: 50px;
+    color: white;
   }
   .weather_text p {
     color: white;
@@ -128,7 +209,7 @@ main {
     margin-bottom: 120px;
     z-index: 0;
   }
-  .spotlight_img {
+  /* .spotlight_img {
     background-color: grey;
     height: 300px;
     width: 75%;
@@ -146,12 +227,29 @@ main {
     position: absolute;
     top: 70%;
     left: 20%
+  } */
+  #spotlight_cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 8px;
+    }
+  #spotlight-cards section{
+      box-shadow: 0 0 10px;
+      width: 1fr;
+      max-width: 300px;
+      margin: 10px auto;
+      padding: 10px 15px;
+      overflow-wrap: break-word;
   }
-
+  #spotlight-cards p {
+    margin: 5px auto;
+  }
 
   footer {
     background-color: rgb(0, 57, 80);
     color: #FFBB6C;
+    padding: 10px auto;
     margin:auto;
     text-align: center;
   }
@@ -179,8 +277,8 @@ main {
     background-color: rgb(0, 154, 214);
     color: black;
     font-size: x-large;
-    padding: 10px 10px;
-    margin: 15px 5px;
+    /* padding: 10px 10px;
+    margin: 15px 5px; */
     border: none;
     border-radius: 10px;
   }
@@ -193,6 +291,12 @@ main {
     border: 1px solid black;
     height: 180px;
     width: 180px;
+  }
+
+  .footer_contact {
+    color: white;
+    font-weight: 900;
+    box-sizing: border-box;
   }
 
 
@@ -324,7 +428,7 @@ main {
     width: 13em;
   }
   label #timestamp {
-    display: hidden;
+    display: none;
   }
   .submit_btn {
     background-color:rgb(90, 20, 6);
@@ -344,4 +448,81 @@ main {
   }
   #thankyou_con h3 {
     color: rgb(70, 70, 70);
+  }
+
+
+  #directory_back {
+    margin: auto;
+    background-color: white;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .grid {
+    width: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-gap: 8px;
+    width: 100%;
+    /* overflow:hidden; */
+    padding-bottom: 20px;
+  }
+
+  .grid section br {
+   width: 100%;
+   height: 5px;
+  }
+
+  .grid section{
+    box-shadow: 0 0 10px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 10px 15px;
+    overflow-wrap: break-word;
+  }
+
+  .grid p {
+    margin: 5px auto;
+  }
+  .grid .dir-names {
+    text-decoration: underline;
+  }
+
+  .list p {
+    margin: 5px auto;
+  }
+
+  .list {
+    width: 100px;
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: left;
+  }
+  .list section {
+    float: left;
+    overflow-wrap: break-word;
+    width: 80%;
+    padding: 5px;
+    padding-bottom: 15px;
+  }
+
+  .list section img{
+    float: left;
+    display: none;
+    width: 100%;
+  } 
+
+  .list section:nth-child(even) {
+    background-color: #FFBB6C;
+  }
+
+  #company-cards a {
+    color:rgb(0, 57, 80);
+  }
+  #company-cards a:hover {
+    color: black;
+  }
+  #company-cards a:visited {
+    color: black;
   }
